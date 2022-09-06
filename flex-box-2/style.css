@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+
+}
+
+header {
+    background-color: pink;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+
+header img {
+    height: 30px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    color: white;
+}
+
+header ul li:not(:first-of-type) {
+    margin-left: 40px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    
+}
+
