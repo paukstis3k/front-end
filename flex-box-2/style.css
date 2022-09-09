@@ -41,8 +41,12 @@ main {
     border: 1px solid grey;
     border-radius: 10px;
     padding: 10px;
+    width: inherit;
 }
 
+section {
+    display: flex;
+}
 
 
 a {
@@ -52,10 +56,15 @@ a {
 
 header {
     background-color: pink;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     height: 60px;
+    
+}
+
+header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 header img {
