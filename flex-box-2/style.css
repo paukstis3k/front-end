@@ -2,123 +2,53 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-}
-
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-
-main {
-    margin: 0 auto;
-    background-color: white;
-}
-
-.li-group {
-    display: flex;
-    justify-content: baseline;
-}
-
-
-
-.links {
-    max-width: 960px;
-    margin: 0 auto;
-    width: 450px;
-}
-
-.links li {
-    border-bottom: 1px solid rgb(0, 0, 0);
-    width: 99%;
-    padding: 5px;
-}
-
-.links ul {
-    list-style: none;
-    border: 1px solid grey;
-    border-radius: 10px;
-    padding: 10px;
-    width: inherit;
-}
-
-section {
-    display: flex;
-}
-
-
 a {
+    color: inherit;
     text-decoration: none;
-    color: rgb(0, 0, 0);
+}
+
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
 }
 
 header {
-    background-color: pink;
-    height: 60px;
-    
-}
-
-header > .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+    background-color: brown;
+    color: white;
+    padding: 4px;
 }
 
 header img {
-    height: 30px;
+    height: 40px;
 }
 
-header ul {
-    display: flex;
-    list-style: none;
-    color: white;
-}
-
-header ul li:not(:first-of-type) {
-    margin-left: 40px;
-}
-
-header a {
-    color: white;
-    text-decoration: none;
-}
-
-article img {
-    height: 200px;
-    float: right;
-    margin-left: 10px;
-}
-
-.images {
-    flex-direction: row;
-    justify-content: baseline;
+header nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}   
+
+header nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+header nav ul li:last-child a {
+    padding: 15px 5px;
+    border: 1px solid white;
+    border-radius: 5px;
 }
 
 
-footer {
-    background-color: pink;
-    padding: 5px;
-    border-top: 1px solid black;
-    text-align: center;
+
+.hero {
+    background-image: url("https://alynas.lt/wp-content/uploads/2020/03/Alynas-barai.jpg");
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40vh;
 }
 
-.images img {
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
 
-}
-
-.images div {
-    margin: 0 auto;
-    margin-bottom: 30px;
-}
-
-.images img:not(:first-child) {
-    margin-left: 40px;
-}
