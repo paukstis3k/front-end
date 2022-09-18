@@ -1,19 +1,39 @@
 @media only screen and (max-width: 375px) {
     body {
+        width: 375px;
+        height: 667px;
+    }
+   
 
+    
+    .border {
+        border-bottom: 1px solid lightgrey;
     }
 
-    header {
-
+    .wrapper,
+    .houses-photo  img,
+    article {
+        width: 350px;
+        margin: 0 auto;
+        display: flex;
     }
-    .wrapper {
-       width: 360px;
-       margin: 0 auto;
+
+    .houses-photo img {
+        height: 300px;
+        margin-bottom: 10px;
+    }
+    
+
+    main  h3 {
+        margin-top: 50px;
+        margin-bottom: 10px;
+        
     }
 
     header img {
-        height: 40px;
-        margin-left: 40px;
+        height: 20px;
+        margin-left: 20px;
+        margin-right: 10px;
         margin-top: 15px;
     }
 
@@ -24,12 +44,49 @@
 
     .hero {
         background-image: url("https://www.w3schools.com/w3images/architect.jpg");
-        height: 250px;
+        height: 30vh;
         background-repeat: no-repeat;
         background-size: cover;
     }
-
-    .top-border {
-        border-bottom: 1px solid lightgray;
+    article,
+    section {
+        flex-direction: column;
+        gap: 5px
     }
+
+    article div:last-of-type {
+        margin-bottom: 10px;
+    }
+
+    article h3 {
+        padding-bottom: 10px;
+    }
+
+    .br-cube {
+        opacity: 0.8;
+        background-color: black;
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 10px;
+        width: 45px;
+        margin: 0 auto;
+    }
+
+    .houses-photo {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        object-fit: contain;
+        color: white;
+        margin-top: 20px;
+    }
+
+    .houses-photo > span {
+        background-color: black;
+        text-align: center;
+    }
+
+
+    
 }
