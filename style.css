@@ -1,92 +1,33 @@
-@media only screen and (max-width: 375px) {
-    body {
-        width: 375px;
-        height: 667px;
-    }
-   
+body {
+    background-color: rgb(82, 185, 113);
+}
 
-    
-    .border {
-        border-bottom: 1px solid lightgrey;
-    }
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
 
-    .wrapper,
-    .houses-photo  img,
-    article {
-        width: 350px;
-        margin: 0 auto;
-        display: flex;
-    }
+article {
+    background-color: white;
+    padding: 10px;
+}
 
-    .houses-photo img {
-        height: 300px;
-        margin-bottom: 10px;
-    }
-    
+article img {
+    width: 100%;
+    position: relative;
+    background-size: cover;
+}
 
-    main  h3 {
-        margin-top: 50px;
-        margin-bottom: 10px;
-        
-    }
+a {
+    text-decoration: none;
+    color: black;
+}
 
-    header img {
-        height: 20px;
-        margin-left: 20px;
-        margin-right: 10px;
-        margin-top: 15px;
-    }
+section {
+    display: flex;
+    justify-content: space-between;
+}
 
-    .header-line {
-        flex-direction: row;
-        display: flex;
-    }
-
-    .hero {
-        background-image: url("https://www.w3schools.com/w3images/architect.jpg");
-        height: 30vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    article,
-    section {
-        flex-direction: column;
-        gap: 5px
-    }
-
-    article div:last-of-type {
-        margin-bottom: 10px;
-    }
-
-    article h3 {
-        padding-bottom: 10px;
-    }
-
-    .br-cube {
-        opacity: 0.8;
-        background-color: black;
-        color: white;
-        font-size: 30px;
-        font-weight: bold;
-        padding: 10px;
-        width: 45px;
-        margin: 0 auto;
-    }
-
-    .houses-photo {
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        object-fit: contain;
-        color: white;
-        margin-top: 20px;
-    }
-
-    .houses-photo > span {
-        background-color: black;
-        text-align: center;
-    }
-
-
-    
+div {
+    padding: 15px 15px 0px;
 }
