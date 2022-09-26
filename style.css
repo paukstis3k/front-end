@@ -10,6 +10,14 @@ body {
 article {
     background-color: white;
     padding: 10px;
+   
+}
+
+main {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 article img {
@@ -26,6 +34,11 @@ a {
 section {
     display: flex;
     justify-content: space-between;
+}
+
+
+.text span {
+    display: block;
 }
 
 div {
