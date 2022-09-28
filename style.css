@@ -3,14 +3,12 @@ body {
 }
 
 .wrapper {
-    width: 80%;
     margin: 0 auto;
+    background-color: white;
 }
 
 article {
-    background-color: white;
     padding: 10px;
-   
 }
 
 main {
@@ -18,6 +16,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-bottom: 50px;
 }
 
 article img {
@@ -34,13 +33,30 @@ a {
 section {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
-
 
 .text span {
     display: block;
 }
 
 div {
-    padding: 15px 15px 0px;
+    padding: 10px 10px 0px;
+}
+
+@media only screen and (min-width: 700px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        margin: 40px 200px;
+    }
+
+    .with-big-img {
+        display: flex;
+        flex-direction: column;
+    }
+
+   
+
+    
 }
