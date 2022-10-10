@@ -8,21 +8,12 @@ body {
     box-sizing: border-box;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "header";
-}
-
 main > h2,
 div > h2,
 section > h2,
 main > p {
     text-align: center;
 }
-
-
 
 .title,
 span {
@@ -40,16 +31,13 @@ p span {
 .layout {
     justify-content: center;
     display: grid;
-    max-width: 678px;
-    margin: 0 auto;
 }
 
 .header {
     grid-area: header;
     display: grid;
-    justify-content: center;
+    justify-items: center;
     background-color:rgb(53, 50, 50) ;
-    max-width: 678px;
 }   
 
 .header--logo img {
@@ -114,14 +102,12 @@ input[type="submit"] {
 }
 
 .footer {
-    background-color:rgb(53, 50, 50);
-    color: white;
-}
-.footer {
     grid-auto-flow: row;
     font-size: 12px;
     padding-left: 5px;
     display: grid;
+    background-color:rgb(53, 50, 50);
+    color: white;
     grid-template-rows:  30px repeat(3, 20px);
 }
 
