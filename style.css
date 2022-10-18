@@ -11,8 +11,8 @@ div {
   left: 50%;
   animation-name: bananova;
   animation-iteration-count: infinite;
+  animation-timing-function: linear;
   animation-duration: 3s;
-  border-radius: 50%;
   transform: translate(-50%, -50%) rotate(360deg);
   will-change: transform;
 }
@@ -22,11 +22,12 @@ h1 {
   left: 50%;
   position: absolute;
   font-size: 20px;
-  transform: translate(-50%, -50%) rotate(-360deg);
+  transform: translate(-50%, -50%) rotate(0deg);
   text-align: center;
   margin: 0;
   animation-name: citrinova;
   animation-iteration-count: infinite;
+  animation-timing-function: linear;
   animation-duration: 3s;
   will-change: transform;
 }
@@ -34,29 +35,31 @@ h1 {
 @keyframes bananova {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
-    border-radius: 0;
     background-color: yellow;
+    border-radius: 10%;
     color: red;
   }
 
   25% {
     transform: translate(-50%, -50%);
     background-color: green;
+    border-radius: 20%;
     color: yellow;
   }
 
   50% {
     transform: translate(-50%, -50%);
-    border-radius: 50%;
     background-color: red;
     color: chartreuse;
+    border-radius: 30%;
   }
 
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
     background-color: aqua;
     color: green;
-    border-radius: 0;
+    border-radius: 50%;
+    
   }
 }
 
