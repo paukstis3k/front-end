@@ -33,25 +33,27 @@ h1 {
 
 @keyframes bananova {
   0% {
-    transform: rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
     border-radius: 0;
     background-color: yellow;
     color: red;
   }
 
   25% {
+    transform: translate(-50%, -50%)
     background-color: green;
     color: yellow;
   }
 
   50% {
+    transform: translate(-50%, -50%)
     border-radius: 50%;
     background-color: red;
     color: chartreuse;
   }
 
   100% {
-    transform: rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
     background-color: aqua;
     color: green;
     border-radius: 0;
