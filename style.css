@@ -40,13 +40,13 @@ h1 {
   }
 
   25% {
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
     background-color: green;
     color: yellow;
   }
 
   50% {
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
     border-radius: 50%;
     background-color: red;
     color: chartreuse;
