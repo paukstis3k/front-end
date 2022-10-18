@@ -1,54 +1,75 @@
 body {
-  background-color: rgb(43, 39, 39);
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: rgb(71, 51, 90);
 }
 
-ul {
-  list-style: none;
-  text-align: center;
+div {
+  background-color: white;
+  height: 100px;
+  width: 100px;
+  position: absolute;  
+  top: 50%;
+  left: 50%;
+  animation-name: bananova;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotate(360deg);
 }
 
-li {
-  position: relative;
-  margin: 50px;
-  font-size: 30px;
-  text-transform: uppercase;
-  color: white;
-  overflow: hidden;
-}
-
-
-li::before,
-li::after {
-  content: "";
+h1 {
+  top: 50%;
+  left: 50%;
   position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  background-color: red;
-  transition: 1s ease-in-out;
+  font-size: 20px;
+  transform: translate(-50%, -50%) rotate(-360deg);
+  text-align: center;
+  margin: 0;
+  animation-name: citrinova;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+
 }
 
-li::before {
-  top: 0;
-  left: -100%
+@keyframes bananova {
+  0% {
+    transform: rotate(0deg);
+    border-radius: 0;
+    background-color: yellow;
+    color: red;
+  }
+
+  25% {
+    background-color: green;
+    color: yellow;
+  }
+
+  50% {
+    border-radius: 50%;
+    background-color: red;
+    color: chartreuse;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    background-color: aqua;
+    color: green;
+    border-radius: 0;
+  }
 }
 
-li::after {
-  left: 100%;
-  height: 10%;
-  bottom: 0;
-}
+@keyframes citrinova {
+  0% {
+    font-size: 30px;
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
 
+  50% {
+    font-size: 15px;
+    transform: translate(-50%, -50%);
+  }
 
-li:hover::before {
-  left: 100%;
-}
-
-li:hover::after {
-  left: -100%;
-  transition-delay: 0.3s;
+  100% {
+    font-size: 30px;
+    transform: translate(-50%, -50%) rotate(-720deg);
+  }
 }
